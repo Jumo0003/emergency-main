@@ -24,7 +24,7 @@
   }
   .burger {
     display: block;
-    background-color: transparent;
+    background-color: white;
     border: 0;
     flex: 0 0 auto;
     margin: 0 20px;

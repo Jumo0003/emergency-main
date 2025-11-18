@@ -1,19 +1,20 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#d7f0ff, #121212);
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: light-dark(#6d51a6, #6d51a6);
 
   /* Logotype */
-  --color-logotype-bg: #000;
+  --color-logotype-bg: light-dark(#06c7f2, #4a6a75);
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: light-dark(#dbbabf, #8a6b78);
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: light-dark(#d4a373, #ffffff);
   --color-link-hover: #fff; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 1px;
@@ -23,26 +24,26 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: light-dark(#e8ddff, #5a4f72);
+  --color-headline-text-page: light-dark(#000000, #fffae2);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(#000, white);
+  --color-text-inverted: #000000;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 8px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
+  --color-card-bg: light-dark(#cad9b2, #556244);
   --color-cta-card-bg: #d5d2d0;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
+  --color-news-bg: light-dark(#cad9b2, #556244);
+  --color-news-bg-inverted: light-dark(#ffd8f1, #8a6b78);
+  --color-cta-newscard-bg: light-dark(#75824d, #556244);
   --color-cta-newscard-bg-inverted: #7b7d83;
 
   /* Fonts */
@@ -63,7 +64,38 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#d1faf2, #26859e);
+  --color-infobox-1-bg: light-dark(#dbbabf, #8a6b78);
+  --color-infobox-2-bg: light-dark(#06c7f2, #4a6a75);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/*fieldset*/
+
+.form-group {
+  background-color: light-dark(#d1faf2, #26859e);
+}
+
+legend {
+  background-color: light-dark(#06c7f2, #4a6a75);
+  border-radius: 8px;
+}
+
+fieldset,
+.form-group,
+legend,
+.btn {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: light-dark(#d4a373, #a65f12);
+}
+
+.button {
+  background-color: light-dark(#d4a373, #a65f12);
 }

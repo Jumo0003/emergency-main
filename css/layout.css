@@ -16,9 +16,44 @@ main > *:not(:first-child) {
 main {
   grid-template-rows: min-content min-content 1fr min-content;
 }
-#instruction main {
-  grid-template-rows: min-content min-content min-content 1fr min-content;
+
+/***main disclaimer content/banner ting*************/
+
+#main-disclaimer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
 }
+
+/* Layout for hele hero-sektionen */
+#main-disclaimer-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* mellemrum mellem logo og tekst */
+  padding: 40px; /* mere luft */
+  color: white;
+}
+
+/* Logoet – GØR DET MINDRE */
+#main-disclaimer-content #logo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+/* Teksten */
+#hero-text h1 {
+  font-size: 2.4rem;
+  margin: 0 0 10px 0;
+  margin-bottom: 20px; /* øger afstanden */
+}
+
+#hero-text .sub {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
 /* LAYOUT FOR HEADER AND FOOTER */
 footer {
   display: grid;
@@ -81,4 +116,130 @@ footer ul {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+/******Drop down valgmuligheds sager**************/
+
+/*drop down button*/
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/*container position (<Div'en>)***********/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/***det der er i drop down menuen som kommer til at være gemt via default***/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/** CSS på "linksne" i drop down menuen*********/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content input[type="radio"] {
+  margin-right: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/******when hover show content*****/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*******ændre farve på dropdown knap når content er i visning***/
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/**********'styling af felter*****/
+input:focus {
+  background-color: white;
+  border-color: #000;
+}
+
+/***popup styling****/
+
+.modal {
+  display: none; /* skjult som standard */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center; /* centrer vandret */
+  align-items: center; /* centrer lodret */
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 14px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #666;
+}
+
+.close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  background-color: #d4a373;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #c28b5f;
 }

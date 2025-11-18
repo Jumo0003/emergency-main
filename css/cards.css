@@ -74,14 +74,14 @@
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: var(--color-cta-card-bg);
+  background-color: #d4a373;
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
 }
 .news_card .cta_btn {
-  background-color: var(--color-cta-newscard-bg);
+  background-color: #d4a373;
 }
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
@@ -90,4 +90,7 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+::backdrop {
+  backdrop-filter: blur(5px);
 }

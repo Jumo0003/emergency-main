@@ -40,3 +40,49 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+.fadeIn {
+  animation: fadeIn_kf 2s linear;
+}
+
+@keyframes fadeIn_kf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rotate {
+  animation: rotate_kf 3s linear;
+}
+
+@keyframes rotate_kf {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 30deg;
+  }
+}
+
+/* Popover */ /*ved ikke helt hvad jeg skal bruge nedenstående for**/
+
+[popover] {
+  opacity: 0;
+
+  scale: 1.1;
+
+  transition: 400ms;
+}
+
+/* Backdrop */
+
+::backdrop {
+  opacity: 0;
+
+  transition: 1s allow-discrete;
+
+  background: #0008;
+}

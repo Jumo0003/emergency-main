@@ -1,119 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
+<html lang="da">
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img src="img/TekstLogoVer01.svg" alt="En Pels Ven"> </a>
+      </div>
+
+      <ul class="menu">
+        <button id="toggle">dark</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Kom i kontakt med os</a></li>
+
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img src="" alt="ICON" id="logo">
+      <div id="hero-text">
+        <h1>En Pelset Ven</h1>
+        <p class="sub"> - Ro og Nærvær uden at eje et dyr</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+
+      <article class="daily_card">
+        <img src="img/cuteanimals.jpeg" alt="teaser_img">
+        <div class="daily_text">
+          <h2>Dyr for dig?</h2>
+          <p>
+            Her kan du læse mere om hvilke dyr du kan booke/mødes med,
+            og finde ud af hvilket et der passer bedst til dig og dine behov.
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/dogAnCatFireFly.jpg" alt="teaser_img">
+        <div class="daily_text">
+          <h2>Skal vi ses?</h2>
+          <p>
+            Her kan du udfylde formularen til at mødes/booke med et dyr som behandling mod dit stress.
+          </p>
+          <a href="register.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Stress</h3>
+        <p>Kontakt med et kæledyr kan hjælpe på en stresset hverdag</p>
+        <img src="img/cuteanimals.jpeg" alt="Cute animals in soft tones">
+
+        <!--Dioalogbox-->
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h3>🐾 Her står mere om Dyr mod stress</h3>
+            <p>
+              Dyr kan have en beroligende effekt og hjælpe med at mindske stress. Når vi omgås dyr, falder vores puls og
+              stressniveau,
+              mens kroppen frigiver hormonet oxytocin, der skaber ro og tryghed.
+              At ae en kat, gå en tur med en hund eller blot observere dyr kan give en pause fra hverdagens pres og
+              bringe os mere i
+              kontakt med nuet.
+              Selv kort kontakt med dyr – fx gennem dyrebesøg eller frivilligt arbejde – kan skabe balance og glæde.
+              Dyr kan ikke erstatte professionel behandling, men de kan være et naturligt og varmt supplement til mere
+              ro i sindet.
+            </p>
+          </div>
+        </div>
+        <button data-modal="modal1"> Dyr mod stress</button>
+
+      </article>
+
+      <article class="news_card">
+        <h3>Pels er afstressende</h3>
+        <p>Nye studier viser at dyr er afslappende</p>
+        <img src="img/personsitting.png" alt="news_img" />
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <p>
+              Nyere forskning peger på, at samvær med dyr har en målbar effekt på stressreduktion og mental sundhed.
+              Ifølge flere studier oplever personer, der tilbringer tid med dyr, et fald i både puls og blodtryk,
+              samtidig med at stresshormonet kortisol reduceres.
+            </p>
+
+            <p>
+              Dyr stimulerer frigivelsen af hormonet oxytocin – et signalstof, der forbindes med tryghed, ro og social
+              tilknytning.
+              Denne biologiske reaktion kan medvirke til at dæmpe kroppens stressrespons og skabe en oplevelse af nærvær
+              og
+              balance.
+            </p>
+
+          </div>
+        </div>
+        <button data-modal="modal2">Giv dig selv en pause</button>
+      </article>
+      <article class="news_card">
+        <h3>Giv dig selv en Pause</h3>
+        <p>Livet går hurtigt. Hos En Pels Ven må du gerne sætte farten ned.</p>
+        <img src="img/dogAnCatFireFly.jpg" alt="an ilustration of a dog and a cat" />
+
+
+        <!--Dioalogbox-->
+
+        <!-- Modal 1 -->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              Hos En Pels Ven tror vi på, at ro nogle gange findes i de små øjeblikke – i et blik, et åndedrag og et
+              møde med et
+              dyr.
+              Vores firbenede venner minder os om at være til stede, trække vejret og lade tankerne falde til ro.
+            </p>
+            <p>
+              Uanset om du besøger os for at nusse, lytte eller bare være i nærheden af dyr, er du velkommen til at tage
+              dig
+              den tid, du har brug for. Her handler det ikke om at nå noget – men om at give slip.
+            </p>
+            <p>
+              Sæt tempoet ned. Mærk nærværet. Find roen – sammen med En Pels Ven.
+            </p>
+          </div>
+        </div>
+        <button data-modal="modal3"> Slap af</button>s
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+
 </html>
